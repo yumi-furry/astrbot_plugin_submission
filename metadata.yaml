@@ -3,4 +3,5 @@ display_name: 毛茸茸的跨年夜投稿插件
 desc: 毛茸茸的跨年夜活动投稿审核插件，支持文本/视频/音频多类别投稿、自动上传云盘、Excel存储、每日限流。
 version: v1.0.0
 author: AstrBot
-repo: https://github.com/
+repo: https://github.com/yumi-furry/astrbot_plugin_submission
+
