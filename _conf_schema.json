@@ -1,0 +1,38 @@
+{
+  "files_dir": {
+    "description": "投稿文件本地保存目录（相对于插件目录）",
+    "type": "string",
+    "default": "data/files",
+    "hint": "建议保持默认。如需自定义，可填写绝对路径或插件目录下的相对路径。"
+  },
+  "max_total_storage_gb": {
+    "description": "所有投稿文件总容量上限（GB）",
+    "type": "float",
+    "default": 30.0,
+    "hint": "所有用户的投稿文件加起来的最大占用空间。超出后新投稿会被拒绝。"
+  },
+  "max_single_file_mb": {
+    "description": "单个投稿文件大小上限（MB）",
+    "type": "int",
+    "default": 20,
+    "hint": "每个用户上传的单个作品文件不能超过此大小。"
+  },
+  "daily_submit_limit": {
+    "description": "单用户每日投稿次数上限",
+    "type": "int",
+    "default": 3,
+    "hint": "每个用户每天最多可以投稿多少次。"
+  },
+  "session_timeout_sec": {
+    "description": "投稿对话超时时间（秒）",
+    "type": "int",
+    "default": 60,
+    "hint": "用户每步操作之间的最大间隔，超时自动退出投稿流程。"
+  },
+  "only_private_mode": {
+    "description": "是否仅允许在私信（私聊）模式下使用投稿功能",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后，在群聊中发送 /submit 将被拒绝，并提示用户请通过私信投稿。"
+  }
+}
